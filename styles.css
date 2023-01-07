@@ -178,7 +178,7 @@ body {
 }
 
 .aboutMeTextContainer {
-  width: 40%;
+  min-width: 40%;
   height: 100%;
 }
 
@@ -251,4 +251,33 @@ body {
 
 #footerSpan::first-letter {
     font-size: 6rem;
+}
+
+
+/* QUERIES */
+
+@media only screen and (max-width: 1200px){
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer {
+    display: none;
+  }
+
+  .line {
+    height: 2px;
+    width: 20rem
+  }
+
+  .bookmark {
+    top: 55%;
+    width: 50%;
+    height: 100%;
+    left: 27vw;
+  }
+
+  #mySkillsSpan {
+    transform: rotate(0);
+  }
 }
